@@ -1,5 +1,5 @@
 language: clojure
-script: lein2 midje
+script: lein2 with-profile dev midje
 branches:
   only:
     - tests
