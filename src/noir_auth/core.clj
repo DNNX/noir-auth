@@ -48,7 +48,7 @@ Parameters:
   func -- the function call;
   redirect-uri -- (optional) the URI where the function will redirect
 if the user is not authenticated."
-  `(if (session/get :simple-auth-user)
+  `(if (current-user)
      ~func
      (resp/redirect (or ~redirect-uri "/"))))
 
