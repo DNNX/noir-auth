@@ -3,3 +3,4 @@ script: lein midje
 branches:
   only:
     - tests
+lein: lein2
